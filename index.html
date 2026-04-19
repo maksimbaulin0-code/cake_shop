@@ -686,17 +686,29 @@
     const API_URL = 'https://bikuramustar.beget.app/webhook-test/9807132c-fdc3-4e47-bb28-144e16feebe1';
     const MY_ID = 784237794;
 
+    const BASE_IMG = 'http://googleusercontent.com/image_collection/image_retrieval/4789834880261931029';
+
     const DEMO_PRODUCTS = [
-        { id: "1", name: "Шоколадный трюфель", price: 4500, image_url: "https://images.unsplash.com/photo-1578985545062-69928b1a2e30?w=600&h=600&fit=crop", stock: 5, category: "cakes", occasion: "birthday", description: "Трёхслойный шоколадный торт с ганашем из бельгийского шоколада и трюфельной крошкой." },
-        { id: "2", name: "Наполеон классик", price: 3800, image_url: "https://images.unsplash.com/photo-1621305344109-2890c4513f6e?w=600&h=600&fit=crop", stock: 3, category: "cakes", occasion: "everyday", description: "Тонкие слои хрустящего слоёного теста с нежным заварным кремом." },
-        { id: "3", name: "Красный бархат", price: 5200, image_url: "https://images.unsplash.com/photo-1616544202924-63b1e9e6884e?w=600&h=600&fit=crop", stock: 2, category: "cakes", occasion: "wedding", description: "Яркий красный бисквит с кремом-чиз и белым шоколадом." },
-        { id: "4", name: "Эклеры набор 6шт", price: 1800, image_url: "https://images.unsplash.com/photo-1550697851-938b557d936e?w=600&h=600&fit=crop", stock: 8, category: "pastries", occasion: "everyday", description: "Шесть эклеров с начинками: ваниль, кофе, карамель, шоколад, фисташка, малина." },
-        { id: "5", name: "Макароны набор 12шт", price: 2200, image_url: "https://images.unsplash.com/photo-1569864233918-31c7b400e36f?w=600&h=600&fit=crop", stock: 12, category: "macarons", occasion: "romantic", description: "12 макарон с авторскими вкусами: лаванда, роза, мatcha, солёная карамель и другие." },
-        { id: "6", name: "Капкейки ваниль 6шт", price: 1600, image_url: "https://images.unsplash.com/photo-1606804958262-e7b6556bf0e6?w=600&h=600&fit=crop", stock: 10, category: "cupcakes", occasion: "birthday", description: "Нежные ванильные капкейки с кремом-чиз и ягодным декором." },
-        { id: "7", name: "Чизкейк Нью-Йорк", price: 3400, image_url: "https://images.unsplash.com/photo-1524351199678-94d5e7ad9125?w=600&h=600&fit=crop", stock: 4, category: "cheesecakes", occasion: "everyday", description: "Классический нью-йоркский чизкейк с плотной сливочной текстурой и основой из печенья." },
-        { id: "8", name: "Тарт с ягодами", price: 2900, image_url: "https://images.unsplash.com/photo-1519919396712-253e820eb339?w=600&h=600&fit=crop", stock: 0, category: "tarts", occasion: "romantic", description: "Хрустящий тарт с заварным кремом и свежими сезонными ягодами." },
-        { id: "9", name: "Свадебный румба", price: 8500, image_url: "https://images.unsplash.com/photo-1535254988056-3b406c030080?w=600&h=600&fit=crop", stock: 1, category: "cakes", occasion: "wedding", description: "Элегантный свадебный торт с белым шоколадом, макарунами и съедобными цветами." },
-        { id: "10", name: "Корпоративный сет", price: 6200, image_url: "https://images.unsplash.com/photo-1563729784474-d77dbb933be9?w=600&h=600&fit=crop", stock: 6, category: "cupcakes", occasion: "corporate", description: "Набор из 12 капкейков и 6 макарон в фирменной упаковке с возможностью брендирования." }
+        { id: "1", name: "Шоколадный трюфель", price: 4500, image_url: `${BASE_IMG}_0`, stock: 5, category: "cakes", occasion: "birthday", description: "Трёхслойный шоколадный торт с ганашем из бельгийского шоколада и трюфельной крошкой." },
+        { id: "2", name: "Наполеон классик", price: 3800, image_url: `${BASE_IMG}_1`, stock: 3, category: "cakes", occasion: "everyday", description: "Тонкие слои хрустящего слоёного теста с нежным заварным кремом." },
+        { id: "3", name: "Красный бархат", price: 5200, image_url: `${BASE_IMG}_2`, stock: 2, category: "cakes", occasion: "wedding", description: "Яркий красный бисквит с кремом-чиз и белым шоколадом." },
+        { id: "4", name: "Эклеры набор 6шт", price: 1800, image_url: `${BASE_IMG}_3`, stock: 8, category: "pastries", occasion: "everyday", description: "Шесть эклеров с начинками: ваниль, кофе, карамель, шоколад, фисташка, малина." },
+        { id: "5", name: "Макароны набор 12шт", price: 2200, image_url: `${BASE_IMG}_4`, stock: 12, category: "macarons", occasion: "romantic", description: "12 макарон с авторскими вкусами: лаванда, роза, мatcha, солёная карамель и другие." },
+        { id: "6", name: "Капкейки ваниль 6шт", price: 1600, image_url: `${BASE_IMG}_5`, stock: 10, category: "cupcakes", occasion: "birthday", description: "Нежные ванильные капкейки с кремом-чиз и ягодным декором." },
+        { id: "7", name: "Чизкейк Нью-Йорк", price: 3400, image_url: `${BASE_IMG}_6`, stock: 4, category: "cheesecakes", occasion: "everyday", description: "Классический нью-йоркский чизкейк с плотной сливочной текстурой и основой из печенья." },
+        { id: "8", name: "Тарт с ягодами", price: 2900, image_url: `${BASE_IMG}_7`, stock: 0, category: "tarts", occasion: "romantic", description: "Хрустящий тарт с заварным кремом и свежими сезонными ягодами." },
+        { id: "9", name: "Свадебный румба", price: 8500, image_url: `${BASE_IMG}_8`, stock: 1, category: "cakes", occasion: "wedding", description: "Элегантный свадебный торт с белым шоколадом, макарунами и съедобными цветами." },
+        { id: "10", name: "Корпоративный сет", price: 6200, image_url: `${BASE_IMG}_9`, stock: 6, category: "cupcakes", occasion: "corporate", description: "Набор из 12 капкейков и 6 макарон в фирменной упаковке с возможностью брендирования." },
+        { id: "11", name: "Тирамису", price: 2100, image_url: `${BASE_IMG}_10`, stock: 7, category: "pastries", occasion: "romantic", description: "Классический итальянский тирамису с маскарпоне и эспрессо." },
+        { id: "12", name: "Медовик", price: 3200, image_url: `${BASE_IMG}_11`, stock: 4, category: "cakes", occasion: "birthday", description: "Многослойный медовый торт с сметанным кремом и карамельной пропиткой." },
+        { id: "13", name: "Панна котта", price: 1400, image_url: `${BASE_IMG}_12`, stock: 9, category: "pastries", occasion: "everyday", description: "Нежный итальянский десерт с ванильным кремом и ягодным соусом." },
+        { id: "14", name: "Морковный торт", price: 3600, image_url: `${BASE_IMG}_13`, stock: 3, category: "cakes", occasion: "birthday", description: "Сочный морковный бисквит с грецкими орехами и сливочным кремом." },
+        { id: "15", name: "Профитроли 9шт", price: 1900, image_url: `${BASE_IMG}_14`, stock: 11, category: "pastries", occasion: "corporate", description: "Хрустящие профитроли с тремя видами крема: шоколад, карамель, ваниль." },
+        { id: "16", name: "Фисташковый торт", price: 4800, image_url: `${BASE_IMG}_15`, stock: 2, category: "cakes", occasion: "wedding", description: "Нежный фисташковый бисквит с малиновым курдом и кремом-чиз." },
+        { id: "17", name: "Крокембуш", price: 5500, image_url: `${BASE_IMG}_16`, stock: 1, category: "pastries", occasion: "wedding", description: "Высокая башня из профитролей с карамельной нитью — французская классика." },
+        { id: "18", name: "Ягодный чизкейк", price: 3100, image_url: `${BASE_IMG}_17`, stock: 5, category: "cheesecakes", occasion: "romantic", description: "Чизкейк с муссом из маракуйи и свежими ягодами голубики и малины." },
+        { id: "19", name: "Лимонный тарт", price: 2400, image_url: `${BASE_IMG}_18`, stock: 6, category: "tarts", occasion: "everyday", description: "Тарт с лимонным курдом и итальянской меренгой, поджаренной до золотистой корочки." },
+        { id: "20", name: "Шоколадный фондан", price: 1700, image_url: `${BASE_IMG}_19`, stock: 8, category: "pastries", occasion: "romantic", description: "Горячий шоколадный кекс с жидкой серединкой из тёмного шоколада и ванильным мороженым." }
     ];
 
     let products = [];
